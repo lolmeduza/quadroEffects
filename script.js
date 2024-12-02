@@ -1,4 +1,4 @@
-const myImage = new Image();
+let myImage = new Image();
 myImage.src = "./girl.jpg";
 
 myImage.addEventListener("load", function () {
@@ -92,7 +92,7 @@ myImage.addEventListener("load", function () {
     this.timeout = setTimeout(() => {
       this.active = true
 
-    }, this.effect.counter * 0.05)
+    }, this.effect.counter * 0.5)
   }
 }
 
@@ -104,7 +104,7 @@ class Effect {
         this.particlesArray = []
     this.image = myImage
     //размер блоков
-    this.gap = 8
+    this.gap = 5
     this.mouse = {
       radius: 8000,
       x: undefined,
@@ -207,6 +207,7 @@ animate();
 const warpButton = document.getElementById("warpButton")
 warpButton.addEventListener("click", () => {
 effect.warp()
+
 this.removeEventListener("click", warpButton)
 })
 //block 
