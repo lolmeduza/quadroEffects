@@ -73,7 +73,7 @@ myImage.addEventListener("load", function () {
     clearTimeout(this.timeout)
     this.x = Math.random()*this.effect.width
         this.y = Math.random()*this.effect.height
-        this.ease = 0.2
+        this.ease = 0.05
         this.size = this.effect.gap
         this.active = false
         this.effect.counter+=1
@@ -104,7 +104,7 @@ class Effect {
         this.particlesArray = []
     this.image = myImage
     //размер блоков
-    this.gap = 7
+    this.gap = 8
     this.mouse = {
       radius: 8000,
       x: undefined,
