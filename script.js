@@ -104,7 +104,7 @@ class Effect {
         this.particlesArray = []
     this.image = myImage
     //размер блоков
-    this.gap = 5
+    this.gap = 8
     this.mouse = {
       radius: 8000,
       x: undefined,
